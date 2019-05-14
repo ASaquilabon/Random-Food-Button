@@ -7,7 +7,7 @@ const chosen = (arr) => {
 }
  class Button extends React.Component {
   
-  state = { }
+  state = {}
   
   handleClick = () => {
     chosen(foodChoices)
