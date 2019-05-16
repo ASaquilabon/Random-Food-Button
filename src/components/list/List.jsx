@@ -33,7 +33,7 @@ class List extends Component {
 
         //using a proxy server cors-anywhere to get rid of the CROS probblem 
         //SUPER HOT TIP: passing the location variable, which equals to the user's input (see below). Instead of grabbbing the entire API, it will only retrieve the restaurants that are closed to the lcoation information we entered. This makes the lodading wayyyyyyy faster.
-        axios.get(`${'https://cors-anywhere.herokuapp.com/'}https://api.yelp.com/v3/businesses/search?location=irvine`, {
+        axios.get(`${'https://cors-anywhere.herokuapp.com/'}https://api.yelp.com/v3/businesses/search?location=${this.props.searchLocationQuery}&term=${this.props.foodChoice}`, {
         //required authorization format from API 
         headers: {
             //to get the API from the .env file use process.env.{variable name}
