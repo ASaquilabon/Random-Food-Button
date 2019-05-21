@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUtensils,
   faSearchLocation,
@@ -8,10 +7,10 @@ import {
   faMapMarkerAlt
 } from "@fortawesome/free-solid-svg-icons";
 import Button from "./components/button";
-// import List from "./components/list/List.jsx";
+import Restaurant from "./components/restaurantList/restaurantList"
 import "./App.css";
 import axios from "axios";
-
+import MediaCard from "./components/card/MediaCard"
 const chosen = arr => {
   const item = arr[Math.floor(Math.random() * arr.length)];
   return item;
@@ -76,65 +75,15 @@ class App extends Component {
       }
     );
   };
-  renderEmptyState(props) {
-    return (
-      <h2 className="heading-tertiary">
-        Hang tight! We are working on getting you the list of the best spots
-        nearby!{" "}
-      </h2>
-    );
-  }
-  renderRestaurantInfo() {
-    const List = this.state.results.map(result => {
-      return (
-        <div className="RestaurantInfo" key={result.id}>
-          <img src={result.image_url} alt="" className="RestaurantInfo__img" />
-          <h2 className="heading-tertiary RestaurantInfo__name">
-            {result.name}
-          </h2>
-
-          <p className="RestaurantInfo__para">
-            <FontAwesomeIcon
-              icon="map-marker-alt"
-              className="RestaurantInfo__icon"
-              aria-label="address:"
-            />
-            {result.location.display_address[0]},{" "}
-            {result.location.display_address[1]}
-          </p>
-
-          <p className="RestaurantInfo__para">
-            <FontAwesomeIcon
-              icon="phone"
-              className="RestaurantInfo__icon"
-              aria-label="phone number:"
-            />
-            {result.phone}
-          </p>
-          <p className="RestaurantInfo__reviewCount">
-            {" "}
-            Based on {result.review_count} Reviews
-          </p>
-          <a href={result.url} className="RestaurantInfo__website">
-            More infomration on Yelp
-          </a>
-        </div>
-      );
-    });
-
-    return <div className="RestuarantList__gallery">{List}</div>;
-  }
+  
   render() {
     return (
       <div className="App">
         <Button handleClick={this.handleClick} item={this.state.item} />
-        <section className="RestuarantList">
-          {this.state.results.length
-            ? this.renderRestaurantInfo()
-            : this.renderEmptyState()}
-          {/*conditional rendering for error state - when this.state.errorState is not true*/}
-          {!!this.state.errorState && <h1>{this.state.error}</h1>}
-        </section>
+        <MediaCard 
+        data={this.state.results} 
+        errorState={this.state.errorState}
+        />
       </div>
     );
   }
