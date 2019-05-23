@@ -6,11 +6,11 @@ import {
   faPhone,
   faMapMarkerAlt
 } from "@fortawesome/free-solid-svg-icons";
-import Button from "./components/button";
-import Restaurant from "./components/restaurantList/restaurantList"
+import SearchBar from "./components/search/SearchBar";
 import "./App.css";
 import axios from "axios";
-import MediaCard from "./components/card/MediaCard"
+import MediaCard from "./components/card/MediaCard";
+
 const chosen = arr => {
   const item = arr[Math.floor(Math.random() * arr.length)];
   return item;
@@ -23,7 +23,18 @@ const foodChoices = [
   "sushi",
   "ramen",
   "mexican",
-  "hawaiian"
+  "hawaiian",
+  "sandwhiches",
+  "wings",
+  "curry",
+  "thai",
+  "seafood",
+  "burgers",
+  "pizza",
+  "salad", 
+  "healthy",
+  "southern",
+  "soul"
 ];
 
 class App extends Component {
@@ -31,15 +42,17 @@ class App extends Component {
     super(props);
     this.state = {
       item: "Click to decide what to eat!",
-      searchLocationQuery: "Irvine",
+      searchLocationQuery: null,
       results: [],
       errorState: null,
       loading: false
     };
   }
 
-  handleClick = event => {
-    event.preventDefault();
+  onFormSubmit = (searchLocationQuery) => {
+    this.setState({
+      searchLocationQuery: searchLocationQuery
+    })
     this.setState(
       {
         item: chosen(foodChoices)
@@ -55,7 +68,7 @@ class App extends Component {
               headers: {
                 //to get the API from the .env file use process.env.{variable name}
                 Authorization:
-                  "Bearer 4PtF46O0ShJUAsA7FLHtACoydrlyDAaG_MYntvijYDCUGq4GebvL8jhkojNp-1__mJlYDKHAUPIz9Moo90k3LSjEEcr-RyYXipe5TK1sx-dLtM5G-Y4I0_E2y8vRXHYx"
+                  "Bearer ZVex6dzsWTaMZqG2tz0veaxVfFmePcq5QWtXvzJqTQp53M11_NN3lueZn5gQYNDWlSJkzUweOJMTIRwyyYs4UPsHhJV3HhJB8m1WurHojHMgfy4MxTKz1zZLzazlXHYx"
               }
             }
           )
@@ -74,15 +87,20 @@ class App extends Component {
           });
       }
     );
-  };
-  
+    console.log("form is submitting")
+  }
+
   render() {
     return (
       <div className="App">
-        <Button handleClick={this.handleClick} item={this.state.item} />
+        <SearchBar 
+          onFormSubmit={this.onFormSubmit}
+          item={this.state.item}  
+        />
+        <h1>{this.state.item}</h1>
         <MediaCard 
-        data={this.state.results} 
-        errorState={this.state.errorState}
+          data={this.state.results} 
+          errorState={this.state.errorState}
         />
       </div>
     );

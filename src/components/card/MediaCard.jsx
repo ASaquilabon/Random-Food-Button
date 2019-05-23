@@ -10,10 +10,11 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = {
   card: {
-    maxWidth: 800,
+    display: "flex",
+    width: 480,
   },
   media: {
-    height: 480,
+    height: 250,
   },
 };
 
@@ -21,7 +22,6 @@ const MediaCard = (props) => {
   const { classes } = props;
   const List = props.data.map(result => {
     return (
-
         <Card className={classes.card} key={result.id}>
           <CardActionArea>
             <CardMedia
