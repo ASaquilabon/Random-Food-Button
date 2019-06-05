@@ -10,6 +10,8 @@ import SearchBar from "./components/search/SearchBar";
 import "./App.css";
 import axios from "axios";
 import MediaCard from "./components/card/MediaCard";
+import ScrollableAnchor from 'react-scrollable-anchor';
+
 
 const chosen = arr => {
   const item = arr[Math.floor(Math.random() * arr.length)];
@@ -17,24 +19,24 @@ const chosen = arr => {
 };
 
 const foodChoices = [
-  "filipino",
-  "korean bbq",
-  "bbq",
-  "sushi",
-  "ramen",
-  "mexican",
-  "hawaiian",
-  "sandwhiches",
-  "wings",
-  "curry",
-  "thai",
-  "seafood",
-  "burgers",
-  "pizza",
-  "salad", 
-  "healthy",
-  "southern",
-  "soul"
+  "Filipino",
+  "Korean BBQ",
+  "BBQ",
+  "Sushi",
+  "Ramen",
+  "Mexican",
+  "Hawaiian",
+  "Sandwhiches",
+  "Wings",
+  "Curry",
+  "Thai",
+  "Seafood",
+  "Burgers",
+  "Pizza",
+  "Salad", 
+  "Healthy",
+  "Southern",
+  "Soul Food"
 ];
 
 class App extends Component {
@@ -87,21 +89,28 @@ class App extends Component {
           });
       }
     );
-    console.log("form is submitting")
   }
-
+handleClick(){
+}
   render() {
     return (
       <div className="App">
-        <SearchBar 
-          onFormSubmit={this.onFormSubmit}
-          item={this.state.item}  
-        />
-        <h1>{this.state.item}</h1>
-        <MediaCard 
-          data={this.state.results} 
-          errorState={this.state.errorState}
-        />
+        <div className="content">
+          <div className="search-bar">
+            <SearchBar 
+              onFormSubmit={this.onFormSubmit}
+              item={this.state.item}  
+            />
+          </div>
+          <ScrollableAnchor id={'result-section'}>
+            <div className="results">
+            <MediaCard 
+              data={this.state.results} 
+              errorState={this.state.errorState}
+            />
+            </div>
+          </ScrollableAnchor>
+        </div>
       </div>
     );
   }

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import './SearchBar.css';
+import Button from "../button"
 
 class SearchBar extends Component {
     constructor() {
@@ -20,31 +21,34 @@ class SearchBar extends Component {
         e.preventDefault();
         this.props.onFormSubmit(this.state.searchLocationQuery)
     }
-
     render(){
         return (
             <div className = "searchForm">
                 {/*add an event listener of form submit so the state only get set when the form is submitted*/}
                 <form onSubmit={(e) => this.handleFormSubmit(e)}>
                     <label 
-                    htmlFor = 'location'
-                    arialabel = 'enter address, neighbourhood, city, province or postal code'
-                    className = 'searchForm__label'
-                    >Randomizing Choices Near <br></br></label>
-                    <input 
-                    type = 'text'
-                    id = 'location'
-                    placeholder = 'address, neighbourhood, city, province or postal code'
-                    value = {this.state.searchLocationQuery}
-                    onChange = {this.handleSearchChange}
-                    className = 'searchForm__input'
+                        htmlFor = 'location'
+                        arialabel = 'Enter City, Address or Postal code'
+                        className = 'searchForm-label'
+                        >
+                        <h1>Randomizing Choices Near</h1></label>
+                        <input 
+                        type = 'text'
+                        id = 'location'
+                        placeholder = 'Enter City, Address or Postal code'
+                        value = {this.state.searchLocationQuery}
+                        onChange = {this.handleSearchChange}
+                        className = 'searchForm__input'
                     />
-                    <button 
-                    type = 'submit'
-                    className = 'searchForm__button'
-                    >Search
-                    <FontAwesomeIcon icon="search-location" className="searchForm__icon"/>
-                    </button>
+                    <h1>{this.props.item}</h1>
+
+                    <Button
+                        type = 'submit'
+                        className = 'searchForm__button'
+                        >SEARCH!
+                        <FontAwesomeIcon icon="search-location" className="searchForm__icon"/>
+                    </Button>
+                    
                 </form>
             </div>
         );
