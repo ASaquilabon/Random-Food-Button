@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './SearchBar.css';
 import Button from "../button";
-import Logo from "../../assets/Logo.png";
 
 class SearchBar extends Component {
     constructor(props) {
@@ -30,7 +28,6 @@ class SearchBar extends Component {
     render(){
         return (
             <div className = "searchForm">
-                 <img id="logo" src={Logo}/>
                 {/*add an event listener of form submit so the state only get set when the form is submitted*/}
                 <form onSubmit={(e) => this.handleFormSubmit(e)}>
                     <label 

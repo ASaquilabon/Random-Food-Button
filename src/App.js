@@ -10,8 +10,7 @@ import SearchBar from "./components/search/SearchBar";
 import "./App.css";
 import axios from "axios";
 import MediaCard from "./components/card/MediaCard";
-import Logo from "./assets/Logo.png"
-
+import Jumbotron from "./components/jumbotron/Jumbotron";
 const chosen = arr => {
   const item = arr[Math.floor(Math.random() * arr.length)];
   return item;
@@ -46,8 +45,7 @@ class App extends Component {
       searchLocationQuery: null,
       results: [],
       errorState: null,
-      loading: false,
-      image: Logo
+      loading: false
     };
   }
 
@@ -97,6 +95,7 @@ handleClick(){
       <div className="App">
         <div className="content">
           <div className="search-bar">
+            <Jumbotron/>
             <SearchBar 
               onFormSubmit={this.onFormSubmit}
               item={this.state.item}  
