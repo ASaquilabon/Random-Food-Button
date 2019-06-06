@@ -10,8 +10,7 @@ import SearchBar from "./components/search/SearchBar";
 import "./App.css";
 import axios from "axios";
 import MediaCard from "./components/card/MediaCard";
-import ScrollableAnchor from 'react-scrollable-anchor';
-
+import Logo from "./assets/Logo.png"
 
 const chosen = arr => {
   const item = arr[Math.floor(Math.random() * arr.length)];
@@ -43,11 +42,12 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      item: "Click to decide what to eat!",
+      item: "Let me help you decide!",
       searchLocationQuery: null,
       results: [],
       errorState: null,
-      loading: false
+      loading: false,
+      image: Logo
     };
   }
 
@@ -57,7 +57,7 @@ class App extends Component {
     })
     this.setState(
       {
-        item: chosen(foodChoices)
+        item: `You randomized... ${chosen(foodChoices)}!`
       },
       () => {
         axios
@@ -101,15 +101,13 @@ handleClick(){
               onFormSubmit={this.onFormSubmit}
               item={this.state.item}  
             />
-          </div>
-          <ScrollableAnchor id={'result-section'}>
-            <div className="results">
+          </div>       
+          <div className="results" id="result-section">
             <MediaCard 
               data={this.state.results} 
               errorState={this.state.errorState}
-            />
-            </div>
-          </ScrollableAnchor>
+          />
+          </div>
         </div>
       </div>
     );

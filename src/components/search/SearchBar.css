@@ -2,7 +2,6 @@
     height: 100vh;
     width:100%;
     position:absolute;
-    top:35%;
     left:50%;
     transform: translate(-50%);
 }
@@ -11,6 +10,15 @@ h1{
 }
 .searchForm__input{
     width: 50%;
-    border-radius: 8px;
+    border-radius:0.50em;
     height: 30px;
+    background-color: beige;
+    border-color: transparent;
+}
+a {
+    text-decoration: none;
+}
+#logo{
+    max-width: 100vh;
+    min-width: 20%;
 }

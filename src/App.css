@@ -17,6 +17,7 @@
   background-position:center center;
   height:100%;
   margin-top:0;
+  min-width:100%
 }
 .results{
   margin-top: 10px;
