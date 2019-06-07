@@ -21,4 +21,6 @@ a {
 p{
     color: #F3EFE0;
     font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 3px 3px #2d4a54;
 }
