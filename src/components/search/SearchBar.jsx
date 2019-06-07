@@ -47,8 +47,10 @@ class SearchBar extends Component {
                     <Button />
                 </form>
                 <a href="#result-section">
-                    <h1>{this.props.item}</h1>
-                    <h1>{this.state.clicked}</h1>
+                    <div className="result-text">
+                    <p>{this.props.item}</p>
+                    <p>{this.state.clicked}</p>
+                    </div>
                 </a>
             </div>
         );
