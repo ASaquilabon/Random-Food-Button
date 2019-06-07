@@ -11,6 +11,7 @@ import "./App.css";
 import axios from "axios";
 import MediaCard from "./components/card/MediaCard";
 import Jumbotron from "./components/jumbotron/Jumbotron";
+import Breakpoint, { BreakpointProvider } from 'react-socks';
 const chosen = arr => {
   const item = arr[Math.floor(Math.random() * arr.length)];
   return item;
@@ -95,7 +96,9 @@ handleClick(){
       <div className="App">
         <div className="content">
           <div className="search-bar">
-            <Jumbotron/>
+            <BreakpointProvider>
+              <Jumbotron/>
+            </BreakpointProvider>
             <SearchBar 
               onFormSubmit={this.onFormSubmit}
               item={this.state.item}  

@@ -1,11 +1,8 @@
-#Logo{
-    height: auto;
-    width: 75vh;
+.Logo {
+    height:auto; 
+    width:80vh;
 }
-
-@media only screen and(min-width:480px)  { 
 #Logo {
-   height:auto; 
-   width:100%;
- }
+    height:auto; 
+    width:65vh;
 }
