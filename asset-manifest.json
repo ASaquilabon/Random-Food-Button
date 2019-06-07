@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Random-Food-Button/static/css/main.719d0c89.chunk.css",
+    "main.css": "/Random-Food-Button/static/css/main.5324cb2b.chunk.css",
     "main.js": "/Random-Food-Button/static/js/main.a0684d4d.chunk.js",
     "main.js.map": "/Random-Food-Button/static/js/main.a0684d4d.chunk.js.map",
     "runtime~main.js": "/Random-Food-Button/static/js/runtime~main.aaaa0989.js",
@@ -8,9 +8,9 @@
     "static/js/2.5cb170da.chunk.js": "/Random-Food-Button/static/js/2.5cb170da.chunk.js",
     "static/js/2.5cb170da.chunk.js.map": "/Random-Food-Button/static/js/2.5cb170da.chunk.js.map",
     "index.html": "/Random-Food-Button/index.html",
-    "precache-manifest.a429988d18b0ee804ddf6b249151e95e.js": "/Random-Food-Button/precache-manifest.a429988d18b0ee804ddf6b249151e95e.js",
+    "precache-manifest.4deecc39327dac08994d1551f4f28360.js": "/Random-Food-Button/precache-manifest.4deecc39327dac08994d1551f4f28360.js",
     "service-worker.js": "/Random-Food-Button/service-worker.js",
-    "static/css/main.719d0c89.chunk.css.map": "/Random-Food-Button/static/css/main.719d0c89.chunk.css.map",
+    "static/css/main.5324cb2b.chunk.css.map": "/Random-Food-Button/static/css/main.5324cb2b.chunk.css.map",
     "static/media/Logo.png": "/Random-Food-Button/static/media/Logo.b1dde36d.png",
     "static/media/App.css": "/Random-Food-Button/static/media/hawaii.0436cb2b.png"
   }
