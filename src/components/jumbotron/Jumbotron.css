@@ -1,9 +1,11 @@
 #Logo{
     height: auto;
-    width: 100%;
+    width: 75vh;
 }
 
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-#Logo{
-    width: 75vh;
+@media only screen and(min-width:480px)  { 
+#Logo {
+   height:auto; 
+   width:100%;
+ }
 }
