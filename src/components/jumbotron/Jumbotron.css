@@ -1,8 +1,12 @@
-.Logo {
+#large {
     height:auto; 
     width:70vh;
 }
-#Logo {
+#medium {
     height:auto; 
     width:60vh;
+}
+#small{
+    height:auto;
+    width:45vh;
 }

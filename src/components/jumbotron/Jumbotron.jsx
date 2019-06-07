@@ -6,10 +6,13 @@ const Jumbotron = () => {
     return (
       <div className="jumbo">
          <Breakpoint large up>
-            <img class="Logo"src={Logo} alt="Logo"/>
+            <img id="large"src={Logo} alt="Logo"/>
         </Breakpoint>
-        <Breakpoint medium down>
-            <img id="Logo"src={Logo} alt="Logo"/>
+        <Breakpoint medium>
+            <img id="medium"src={Logo} alt="Logo"/>
+        </Breakpoint>
+        <Breakpoint small down>
+            <img id="small" src={Logo} alt="Logo"/>
         </Breakpoint>
       </div>
       
