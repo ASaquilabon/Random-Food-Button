@@ -49,7 +49,7 @@ class SearchBar extends Component {
                 <a href="#result-section">
                     <h1>{this.props.item}</h1>
                     <h1>{this.state.clicked}</h1>
-                    </a>
+                </a>
             </div>
         );
     }

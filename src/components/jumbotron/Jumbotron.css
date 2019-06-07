@@ -1,4 +1,9 @@
 #Logo{
     height: auto;
-    width: 60vh;
+    width: 100%;
+}
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+#Logo{
+    width: 75vh;
 }
