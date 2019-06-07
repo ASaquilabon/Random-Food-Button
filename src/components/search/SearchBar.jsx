@@ -48,8 +48,8 @@ class SearchBar extends Component {
                 </form>
                 <a href="#result-section">
                     <div className="result-text">
-                    <p>{this.props.item}</p>
-                    <p>{this.state.clicked}</p>
+                        <p class="random">{this.props.item}</p>
+                        <p class="random">{this.state.clicked}</p>
                     </div>
                 </a>
             </div>
