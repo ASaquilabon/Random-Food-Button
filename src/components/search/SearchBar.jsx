@@ -32,14 +32,14 @@ class SearchBar extends Component {
                 <form onSubmit={(e) => this.handleFormSubmit(e)}>
                     <label 
                         htmlFor = 'location'
-                        arialabel = 'Enter City, Address or Postal code'
+                        arialabel = 'Enter City, Address, or Postal code'
                         className = 'searchForm-label'
                         >
                         <h1>Can't decide on what to eat?!</h1></label>
                         <input 
                         type = 'text'
                         id = 'location'
-                        placeholder = 'Enter City, Address or Postal code'
+                        placeholder = 'Enter City, Address, or Postal code'
                         value = {this.state.searchLocationQuery}
                         onChange = {this.handleSearchChange}
                         className = 'searchForm__input'
