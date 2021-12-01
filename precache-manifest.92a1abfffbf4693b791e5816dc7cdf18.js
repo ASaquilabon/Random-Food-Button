@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b137073d0a3d7913f181b69ca35288b6",
+    "revision": "2ef5634add4b6ec92b82f6c7d416fbe4",
     "url": "/Random-Food-Button/index.html"
   },
   {
-    "revision": "ae60c260ba2462274288",
+    "revision": "3efc190a98abfb22a9e1",
     "url": "/Random-Food-Button/static/css/main.dd628208.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Random-Food-Button/static/js/2.22fa5743.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ae60c260ba2462274288",
-    "url": "/Random-Food-Button/static/js/main.72d01047.chunk.js"
+    "revision": "3efc190a98abfb22a9e1",
+    "url": "/Random-Food-Button/static/js/main.c0b984ad.chunk.js"
   },
   {
     "revision": "e71bce15d610a1ad0322",
