@@ -62,8 +62,8 @@ class App extends Component {
       () => {
         axios
           .get(
-            `https://igpg6boue7.execute-api.us-west-1.amazonaws.com/dev/?${encodeURIComponent(
-              `url=https://api.yelp.com/v3/businesses/search?location=${this.state.searchLocationQuery}&term=${this.state.item}`
+            `https://igpg6boue7.execute-api.us-west-1.amazonaws.com/dev/?url=${encodeURIComponent(
+              `https://api.yelp.com/v3/businesses/search?location=${this.state.searchLocationQuery}&term=${this.state.item}`
             )}`,
             {
               //required authorization format from API
