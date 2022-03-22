@@ -1,25 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 .App {
   text-align: center;
   display: flex;
   height: 100%;
 }
-.content{
-  min-height:100%;
-  min-width:100%;
-  display:inline-block;
-  height:100%;
-  position:absolute;
+.content {
+  min-height: 100%;
+  min-width: 100%;
+  display: inline-block;
+  height: 100%;
+  position: absolute;
 }
-.search-bar{
-  background-image: url("assets/hawaii.png");
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-position:center center;
-  height:100%;
-  margin-top:0;
-  min-width:100%
+.search-bar {
+  background-image: url("assets/hawaii.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  margin-top: 0;
+  min-width: 100%;
 }
-.results{
+.results {
   margin-top: 10px;
 }
 

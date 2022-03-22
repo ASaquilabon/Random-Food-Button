@@ -38,7 +38,7 @@ function SearchBar(props) {
       </form>
       <a href="#result-section">
         <div className="result-text">
-          <p class="random">{item}</p>
+          <p class="random">{props.item}</p>
         </div>
       </a>
     </div>

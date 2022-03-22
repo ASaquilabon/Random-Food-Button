@@ -4,7 +4,7 @@ const Button = (props) => {
   return (
     <div className="button-result">
       <button id="eat" onClick={props.handleFormSubmit}>
-        Let's Eat
+        Let Us Decide
       </button>
     </div>
   );

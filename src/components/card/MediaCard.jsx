@@ -50,7 +50,11 @@ const MediaCard = (props) => {
               {result.phone}{" "}
             </p>
             <p>Based on {result.review_count} Reviews</p>
-            <a href={result.url} className="RestaurantInfo__website">
+            <a
+              href={result.url}
+              target="_blank"
+              className="RestaurantInfo__website"
+            >
               Click for more information on Yelp
             </a>
           </CardContent>
