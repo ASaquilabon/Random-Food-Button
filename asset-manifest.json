@@ -1,24 +1,15 @@
 {
   "files": {
-    "main.css": "/Random-Food-Button/static/css/main.dd628208.chunk.css",
-    "main.js": "/Random-Food-Button/static/js/main.72d01047.chunk.js",
-    "main.js.map": "/Random-Food-Button/static/js/main.72d01047.chunk.js.map",
-    "runtime-main.js": "/Random-Food-Button/static/js/runtime-main.2e041593.js",
-    "runtime-main.js.map": "/Random-Food-Button/static/js/runtime-main.2e041593.js.map",
-    "static/js/2.22fa5743.chunk.js": "/Random-Food-Button/static/js/2.22fa5743.chunk.js",
-    "static/js/2.22fa5743.chunk.js.map": "/Random-Food-Button/static/js/2.22fa5743.chunk.js.map",
+    "main.css": "/Random-Food-Button/static/css/main.c1ec9308.css",
+    "main.js": "/Random-Food-Button/static/js/main.4f1c3a84.js",
+    "static/media/hawaii.png": "/Random-Food-Button/static/media/hawaii.ded8c2887cae6f048ce6.png",
+    "static/media/Logo.png": "/Random-Food-Button/static/media/Logo.2b64c313e15e1622db55.png",
     "index.html": "/Random-Food-Button/index.html",
-    "precache-manifest.f7370547c1e1c603b9cc89f7f71f76dc.js": "/Random-Food-Button/precache-manifest.f7370547c1e1c603b9cc89f7f71f76dc.js",
-    "service-worker.js": "/Random-Food-Button/service-worker.js",
-    "static/css/main.dd628208.chunk.css.map": "/Random-Food-Button/static/css/main.dd628208.chunk.css.map",
-    "static/js/2.22fa5743.chunk.js.LICENSE.txt": "/Random-Food-Button/static/js/2.22fa5743.chunk.js.LICENSE.txt",
-    "static/media/Logo.png": "/Random-Food-Button/static/media/Logo.b1dde36d.png",
-    "static/media/App.css": "/Random-Food-Button/static/media/hawaii.0436cb2b.png"
+    "main.c1ec9308.css.map": "/Random-Food-Button/static/css/main.c1ec9308.css.map",
+    "main.4f1c3a84.js.map": "/Random-Food-Button/static/js/main.4f1c3a84.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.2e041593.js",
-    "static/js/2.22fa5743.chunk.js",
-    "static/css/main.dd628208.chunk.css",
-    "static/js/main.72d01047.chunk.js"
+    "static/css/main.c1ec9308.css",
+    "static/js/main.4f1c3a84.js"
   ]
 }
