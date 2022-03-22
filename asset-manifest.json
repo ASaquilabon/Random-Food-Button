@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Random-Food-Button/static/css/main.c1ec9308.css",
-    "main.js": "/Random-Food-Button/static/js/main.4f1c3a84.js",
-    "static/media/hawaii.png": "/Random-Food-Button/static/media/hawaii.ded8c2887cae6f048ce6.png",
+    "main.css": "/Random-Food-Button/static/css/main.8cd2ae92.css",
+    "main.js": "/Random-Food-Button/static/js/main.249a7582.js",
+    "static/media/hawaii.jpg": "/Random-Food-Button/static/media/hawaii.6f304713aab326d837b8.jpg",
     "static/media/Logo.png": "/Random-Food-Button/static/media/Logo.2b64c313e15e1622db55.png",
     "index.html": "/Random-Food-Button/index.html",
-    "main.c1ec9308.css.map": "/Random-Food-Button/static/css/main.c1ec9308.css.map",
-    "main.4f1c3a84.js.map": "/Random-Food-Button/static/js/main.4f1c3a84.js.map"
+    "main.8cd2ae92.css.map": "/Random-Food-Button/static/css/main.8cd2ae92.css.map",
+    "main.249a7582.js.map": "/Random-Food-Button/static/js/main.249a7582.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1ec9308.css",
-    "static/js/main.4f1c3a84.js"
+    "static/css/main.8cd2ae92.css",
+    "static/js/main.249a7582.js"
   ]
 }
